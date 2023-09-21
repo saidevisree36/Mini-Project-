@@ -1,0 +1,124 @@
+@media screen and (max-width: 760px) {
+  .nav-bar-container {
+    display: none;
+  }
+  .small-size-container-item {
+    height: 60px;
+    max-width: 760px;
+    margin-bottom: 25px;
+  }
+  .card-small-size-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: aliceblue;
+    height: 40px;
+    max-width: 760px;
+    margin-bottom: 25px;
+  }
+  .website-logo {
+    height: 75px;
+    width: 100px;
+  }
+  .nav-bar-button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  .fi-menu {
+    size: 30;
+  }
+  .home-shelves-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    height: 40px;
+    width: 200px;
+    list-style-type: none;
+  }
+  .tab-item {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #666666;
+  }
+  .activeFavorite {
+    color: #94c1e0;
+  }
+  .nav-bar-container {
+    display: none;
+  }
+  .fi-menu {
+    size: 30;
+  }
+}
+
+@media screen and (min-width: 766px) {
+  .small-size-container-item {
+    display: none;
+  }
+  .nav-bar-container {
+    height: 60px;
+    max-width: 100vw;
+    margin-bottom: 45px;
+  }
+  .tab-item {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #666666;
+  }
+  .active-tab-item {
+    color: blue;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: skyblue;
+    height: 100px;
+    width: 100vw;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .website-logo {
+    height: 75px;
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .home-shelves-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    height: 40px;
+    width: 250px;
+    list-style-type: none;
+    margin-left: 700px;
+  }
+  .link-items {
+    text-decoration: none;
+  }
+  .home-link {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  .header-button {
+    height: 5vh;
+    width: 10vw;
+    color: #ffffff;
+    background-color: #0000e6;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-left: 100px;
+    margin-top: 25px;
+  }
+}

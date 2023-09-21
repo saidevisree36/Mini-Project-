@@ -1,0 +1,43 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+.not-found {
+  width: 448px;
+  height: 300px;
+  top: 244px;
+  left: 496px;
+}
+.not-found-heading {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #334155;
+}
+
+.not-found-paragraph {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.not-found-link-button {
+  text-decoration: none;
+}
+.not-found-button {
+  width: Hug (164px);
+  height: Hug (48px);
+  padding: 12px, 24px, 12px, 24px;
+  border-radius: 12px;
+  gap: 8px;
+}

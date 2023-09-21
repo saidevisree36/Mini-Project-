@@ -1,0 +1,218 @@
+.header-footer-book-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.book-details-container-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  min-height: 100vh;
+  width: 80vw;
+  background-color: #ffffff;
+  top: 153px;
+  left: 150px;
+  margin-left: 200px;
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+.book-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+  min-height: 80vh;
+  width: 80vw;
+  background-color: #ffffff;
+}
+.image-author-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  width: 80vw;
+  background-color: #ffffff;
+}
+.cover-pic {
+  width: 235px;
+  height: 274px;
+  top: 217px;
+  left: 427px;
+  border-radius: 14.13px;
+  background: #ffffff;
+}
+.author-name-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400px;
+  height: 250px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  padding: 15px;
+}
+.title-author-heading {
+  height: 120px;
+  width: 250px;
+  padding: 15px;
+}
+.title {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: left;
+  color: #334155;
+}
+.author-heading {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #475569;
+}
+.rating-containers {
+  height: 60px;
+  width: 300px;
+  display: flex;
+  margin-left: 15px;
+}
+.ratings {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #475569;
+}
+.icon-star {
+  margin-right: 5px;
+}
+.rating-paragraphs {
+  font-family: HK Grotesk;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #334155;
+  margin-left: 10px;
+}
+.star-paragraph-containers {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10px;
+  margin-left: 15px;
+}
+.status-container {
+  height: 60px;
+  width: 250px;
+  display: flex;
+  background-color: #ffffff;
+  margin-left: 15px;
+}
+.status-heading {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #475569;
+}
+.status-paragraph {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #0284c7;
+}
+.hr-line {
+  width: 1200px;
+  background: #94a3b8;
+  border: 1px solid #94a3b8;
+}
+.about-author-about-book-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 500px;
+  min-width: 750px;
+  padding: 20px;
+}
+.about-heading {
+  font-family: Inter;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #334155;
+  margin-top: 5px;
+}
+.about-paragraph {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #475569;
+  margin-top: 5px;
+}
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failure-view {
+  width: 476px;
+  height: 327px;
+  top: 310px;
+  left: 682px;
+}
+.failure-heading {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #475569;
+}
+.retry-button {
+  width: Hug (112px);
+  height: Hug (48px);
+  top: 683px;
+  left: 664px;
+  border-radius: 4px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #ffffff;
+}
+.failures-heading {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #334155;
+}
