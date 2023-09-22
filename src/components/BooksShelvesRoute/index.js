@@ -148,12 +148,12 @@ class BooksShelvesRoute extends Component {
       <div className="failure-view-container">
         <img
           src="https://res.cloudinary.com/djryeehgj/image/upload/v1694843788/books_shelves_failure_view_hsi8uz.png"
-          alt="failure view"
+          alt="no books"
           className="failure-view"
         />
-        <h1 className="failures-heading">
+        <p className="failures-heading">
           Your search for {searchInput} did not find any matches.
-        </h1>
+        </p>
       </div>
     )
   }
@@ -185,122 +185,66 @@ class BooksShelvesRoute extends Component {
     return (
       <>
         <Header shelves />
-        <div className="card-container-list">
-          <div className="left-side-container">
-            <h1 className="left-side-heading" key="title">
-              Bookshelves
-            </h1>
-            <ul className="left-side-listed-items">
-              {bookshelvesList.map(eachItem => {
-                const activeFilterClass =
-                  activeFiltersValue === eachItem.value ? 'activeItem' : ''
-                const onClickFilter = () => {
-                  this.setState(
-                    {
-                      activeFiltersValue: eachItem.value,
-                      activeFiltersLabel: eachItem.label,
-                    },
-                    this.getBooksShelves,
+        <div>
+          <div className="book-shelves-list">
+            <div className="left-side-container">
+              <h1 className="left-side-heading" key="title">
+                Bookshelves
+              </h1>
+              <ul className="left-side-listed-items">
+                {bookshelvesList.map(eachItem => {
+                  const activeFilterClass =
+                    activeFiltersValue === eachItem.value ? 'activeItem' : ''
+                  const onClickFilter = () => {
+                    this.setState(
+                      {
+                        activeFiltersValue: eachItem.value,
+                        activeFiltersLabel: eachItem.label,
+                      },
+                      this.getBooksShelves,
+                    )
+                  }
+
+                  return (
+                    <li className="listed-item-details" key={eachItem.label}>
+                      <button
+                        type="button"
+                        className={`active-filters ${activeFilterClass}`}
+                        onClick={onClickFilter}
+                      >
+                        {eachItem.label}
+                      </button>
+                    </li>
                   )
-                }
+                })}
+              </ul>
+            </div>
 
-                return (
-                  <li className="listed-item-details" key={eachItem.label}>
-                    <button
-                      type="button"
-                      className={`active-filters ${activeFilterClass}`}
-                      onClick={onClickFilter}
-                    >
-                      {eachItem.label}
-                    </button>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-
-          <div className="right-side-card-container">
-            <div className="top-card-container">
-              <h1 className="top-card-heading">{activeFiltersLabel} Books</h1>
-              <div className="search-input-container">
-                <input
-                  type="search"
-                  onChange={this.onChangeSearchInput}
-                  className="search-inputs"
-                  value={searchInput}
-                  placeholder="Search..."
-                />
-                <button
-                  type="button"
-                  className="icon-button"
-                  onClick={this.onChangeSearchValue}
-                  testid="searchButton"
-                >
-                  <BsSearch size="20" />
-                </button>
+            <div className="right-side-card-container">
+              <div className="top-card-container">
+                <h1 className="top-card-heading">{activeFiltersLabel} Books</h1>
+                <div className="search-input-container">
+                  <input
+                    type="search"
+                    onChange={this.onChangeSearchInput}
+                    className="search-inputs"
+                    value={searchInput}
+                    placeholder="Search..."
+                  />
+                  <button
+                    type="button"
+                    className="icon-button"
+                    onClick={this.onChangeSearchValue}
+                    testid="searchButton"
+                  >
+                    <BsSearch size="20" />
+                  </button>
+                </div>
+              </div>
+              <div className="all-selected-books-items">
+                {this.renderAllBooksView()}
               </div>
             </div>
-            <div className="all-selected-books-items">
-              {this.renderAllBooksView()}
-            </div>
-          </div>
-        </div>
-
-        <div className="small-screen-container">
-          <div className="small-screen-search-input-container">
-            <input
-              type="search"
-              onChange={this.onChangeSearchInput}
-              className="search-inputs"
-              value={searchInput}
-              placeholder="Search..."
-            />
-            <button
-              type="button"
-              className="btn"
-              onClick={this.onChangeSearchValue}
-              testid="searchButton"
-            >
-              <BsSearch size="35" />
-            </button>
-          </div>
-          <div className="small-screen-books-shelves-container">
-            <h1 className="left-side-heading">Bookshelves</h1>
-            <ul className="small-screen-left-side-listed-items">
-              {bookshelvesList.map(eachItem => {
-                const activeSmallScreenFilterClass =
-                  activeFiltersValue === eachItem.value
-                    ? 'activeSmallScreenItem'
-                    : ''
-                const onClickFilter = () => {
-                  this.setState(
-                    {
-                      activeFiltersValue: eachItem.value,
-                      activeFiltersLabel: eachItem.label,
-                    },
-                    this.getBooksShelves,
-                  )
-                }
-
-                return (
-                  <li
-                    className="small-screen-listed-item-details"
-                    key={eachItem.label}
-                  >
-                    <button
-                      type="button"
-                      className={`active-filters ${activeSmallScreenFilterClass}`}
-                      onClick={onClickFilter}
-                    >
-                      {eachItem.label}
-                    </button>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-          <div className="small-screen-all-selected-books-items">
-            {this.renderAllBooksView()}
           </div>
         </div>
         <Footer />

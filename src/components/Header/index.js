@@ -92,7 +92,7 @@ class Header extends Component {
               </Link>
 
               <Link to="/shelf" className="link-items">
-                <li className={`tab-item ${activeFavorite}`}>
+                <li className={`tab-item ${activeShelves}`}>
                   <h1 className="home-link">Bookshelves</h1>
                 </li>
               </Link>

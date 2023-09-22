@@ -29,7 +29,7 @@ const BookItems = props => {
               </div>
             </div>
             <div className="status-containers">
-              <h1 className="status-headings">Status: </h1>
+              <p className="status-headings">Status: </p>
               <p className="status-paragraphs">{readStatus}</p>
             </div>
           </div>

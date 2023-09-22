@@ -4,116 +4,124 @@
 @media screen and (max-width: 759px) {
   .book-item-list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 100px;
-    width: 250px;
-    background-color: aliceblue;
-    flex-wrap: wrap;
+    height: 200px;
+    width: 350px;
+    background-color: #ffffff;
+    margin: 10px;
   }
   .listed-items {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100px;
+    height: 200px;
     width: 350px;
+    background-color: #ffffff;
   }
-  .image-content-container {
-    width: 133px;
-    height: 155px;
-    top: 260px;
-    left: 24px;
+  .image-content-containers {
+    width: 150px;
+    height: 200px;
     border-radius: 8px;
     background: #ffffff;
+    margin-right: 15px;
   }
-  .cover-pic {
-    width: 133px;
-    height: 155px;
-    top: 260px;
-    left: 24px;
+  .cover-pics {
+    width: 150px;
+    height: 200px;
     border-radius: 8px;
   }
   .status-rating-author-container {
     width: 146px;
     height: 120px;
-    top: 278px;
-    left: 173px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+  }
+  .title-author-name-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .title-heading {
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0px;
     text-align: left;
-    background: #334155;
+    color: #334155;
   }
-  .author-name {
+  .author-name-title {
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0px;
     text-align: left;
-    background: #475569;
+    color: #475569;
   }
-  .rating-container {
+  .rating-container-items {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 20px;
-    width: 60px;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
   }
   .rating-heading {
     font-family: Inter;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0px;
     text-align: left;
-    background: #475569;
+    color: #475569;
+    margin-top: 30px;
   }
-  .star-rating-container {
+  .star-rating-container-items {
     width: 39px;
     height: 16px;
-    top: 253px;
-    left: 657px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
-  .rating {
+  .icon-star {
+    size: 15;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  .ratings {
     font-family: HK Grotesk;
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
     text-align: left;
-    background: #334155;
+    color: #334155;
   }
-  .status-container {
-    width: 39px;
-    height: 16px;
-    top: 253px;
-    left: 657px;
+  .status-containers {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
-  .status-heading {
+  .status-headings {
     font-family: Inter;
     font-size: 12px;
     font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0px;
     text-align: left;
-    background: #475569;
+    color: #475569;
+    margin-top: 13px;
+    margin-right: 5px;
   }
-  .status-paragraph {
+  .status-paragraphs {
     font-family: Inter;
     font-size: 12px;
     font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0px;
     text-align: left;
-    background: #0284c7;
+    color: #0284c7;
   }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 776px) {
   .book-item-list {
     display: flex;
     justify-content: space-between;

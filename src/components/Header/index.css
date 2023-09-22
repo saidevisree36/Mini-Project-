@@ -2,10 +2,22 @@
   .nav-bar-container {
     display: none;
   }
+  .header-button {
+    height: 30px;
+    width: 60px;
+    background-color: #0000e6;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Roboto';
+    border: none;
+    outline: none;
+    margin-top: 15px;
+  }
   .small-size-container-item {
-    height: 60px;
+    height: 40px;
     max-width: 760px;
     margin-bottom: 25px;
+    background-color: transparent;
   }
   .card-small-size-container {
     display: flex;
@@ -13,8 +25,9 @@
     align-items: flex-start;
     background-color: aliceblue;
     height: 40px;
-    max-width: 760px;
+    min-width: 400px;
     margin-bottom: 25px;
+    background-color: transparent;
   }
   .website-logo {
     height: 75px;
@@ -35,17 +48,18 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: transparent;
-    height: 40px;
-    width: 200px;
+    height: 60px;
+    min-width: 200px;
     list-style-type: none;
+    background-color: black;
   }
   .tab-item {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Roboto';
     font-weight: 500;
     color: #666666;
   }
-  .activeFavorite {
+  .active-tab-item {
     color: #94c1e0;
   }
   .nav-bar-container {

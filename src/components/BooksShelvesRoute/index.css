@@ -1,49 +1,79 @@
-@media screen and (max-width: 760px) {
-  .book-shelves-list {
-    display: none;
+@media screen and (max-width: 786px) {
+  .small-screen-listed-item-detail {
+    list-style-type: none;
   }
-  .small-screen-container {
+  .book-shelves-list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 100vh;
-    width: 760px;
+    width: 500px;
   }
-  .small-screen-search-input-container {
+  .left-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100px;
+    max-width: 760px;
+    background-color: transparent;
+    margin-top: 45px;
+  }
+  .right-side-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100px;
+    min-width: 200px;
+  }
+  .top-card-heading {
+    display: none;
+  }
+  .search-input-container {
     width: 264px;
     height: 36px;
     top: 80px;
     left: 24px;
     border-radius: 0px, 3px, 3px, 0px;
-    background-color: #0284c7;
+    color: #334155;
+    order: 1;
+    border: 1px solid #000000;
   }
   .search-inputs {
     width: Hug (47px);
     height: Hug (24px);
     gap: 4px;
     border: none;
+    outline: none;
+    margin-right: 10px;
   }
-  .btn {
-    width: 50px;
-    height: 20px;
-    background: #94a3b8;
+  .icon-button {
+    width: 85px;
+    height: 34px;
+    color: #94a3b8;
+    border: none;
+    outline: none;
   }
-  .small-screen-books-shelves-container {
+  .left-side-listed-items {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     height: 100px;
     width: 500px;
+    margin-top: 15px;
+    background-color: transparent;
   }
-  .small-screen-left-side-listed-items {
+  .listed-item-details {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 100px;
+    height: 500px;
     width: 500px;
+    list-style-type: none;
   }
   .left-side-heading {
     font-family: Inter;
@@ -52,8 +82,9 @@
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
-    background: #334155;
+    color: #334155;
   }
+
   .active-filters {
     width: Hug (62px);
     height: Hug (24px);
@@ -62,7 +93,8 @@
     padding: 4px, 8px, 4px, 8px;
     border-radius: 25px;
     border: 1px;
-    background: #0284c7;
+    color: #0284c7;
+    background: #ffffff;
     border: 1px solid #0284c7;
   }
   .failure-view-container {
@@ -109,27 +141,34 @@
     text-align: left;
     background: #334155;
   }
-  .activeSmallScreenItem {
+  .activeItem {
     font-family: Inter;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    background: #f8fafc;
+    color: #f8fafc;
     background-color: #0284c7;
   }
-  .small-screen-all-selected-books-items {
+  .all-selected-books-items {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
+    min-height: 100vh;
+    background-color: transparent;
+    order: 2;
   }
 }
 
-@media screen and (min-width: 776px) {
-  .small-screen-container {
-    display: none;
+@media screen and (min-width: 787px) {
+  .book-shelves-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100vw;
   }
   .loader-container {
     display: flex;
@@ -137,15 +176,6 @@
     align-items: flex-start;
     align-self: flex-start;
     margin-left: 500px;
-  }
-  .book-shelves-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    min-height: 100vh;
-    width: 100vw;
-    background-color: #ffffff;
   }
   .card-container-list {
     display: flex;
